@@ -1,22 +1,28 @@
 from distutils.core import setup
 
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+
 setup(
     name='deeply',
     packages=['deeply'],
-    version='1.0',
+    version='1.0.1',
     license='MIT',
     description='Deeply allow you to make your dataclasses more functional',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Alex Dudko',
     author_email='duke@simfik.ru',
     url='https://github.com/SimfikDuke/deeply',
-    download_url='https://github.com/SimfikDuke/deeply/archive/v_1.tar.gz',
+    download_url='https://github.com/SimfikDuke/deeply/archive/v_1_0_1.tar.gz',
     keywords=['web', 'dataclass', 'dict', 'api', 'easy', 'json'],
     install_requires=[
         'dacite',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
-        'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
