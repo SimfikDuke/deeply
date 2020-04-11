@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 
-with open("README.md", "r") as fh:
+with open("README", "r") as fh:
     long_description = fh.read()
 
 
@@ -12,7 +12,6 @@ setup(
     license='MIT',
     description='Deeply allow you to make your dataclasses more functional',
     long_description=long_description,
-    long_description_content_type='text/markdown',
     author='Alex Dudko',
     author_email='duke@simfik.ru',
     url='https://github.com/SimfikDuke/deeply',
