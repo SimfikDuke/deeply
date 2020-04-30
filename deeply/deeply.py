@@ -14,6 +14,8 @@ class Deeply:
     def __deep_dict(cls, obj: T, rules: List[Tuple[Callable[[T], bool], Callable[[T], Any]]]):
         if hasattr(obj, '__dict__'):
             return {k: cls.__deep_dict(v, rules) for k, v in obj.__dict__.items()}
+        elif isinstance(obj, Dict):
+            return {k: cls.__deep_dict(v, rules) for k, v in obj.items()}
         elif isinstance(obj, Iterable) and not isinstance(obj, str):
             return [cls.__deep_dict(v, rules) for v in obj]
         for clause, decision in rules:

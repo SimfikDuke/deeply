@@ -8,14 +8,14 @@ with open("README", "r") as fh:
 setup(
     name='deeply',
     packages=['deeply'],
-    version='1.0.1',
+    version='1.0.2',
     license='MIT',
     description='Deeply allow you to make your dataclasses more functional',
     long_description=long_description,
     author='Alex Dudko',
     author_email='duke@simfik.ru',
     url='https://github.com/SimfikDuke/deeply',
-    download_url='https://github.com/SimfikDuke/deeply/archive/v_1_0_1.tar.gz',
+    download_url='https://github.com/SimfikDuke/deeply/archive/v_1_0_2.tar.gz',
     keywords=['web', 'dataclass', 'dict', 'api', 'easy', 'json'],
     install_requires=[
         'dacite',
